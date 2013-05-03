@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_editor_title"
+        android:key="pref_key_editor_settings">
+        <CheckBoxPreference
+            android:key="pref_key_syntax_highlighting"
+            android:summary="@string/pref_summary_syntax_highlighting"
+            android:title="@string/pref_title_syntax_highlighting"
+            android:defaultValue="false" />
+        <EditTextPreference
+            android:key="pref_key_tab_stop"
+            android:summary="@string/pref_summary_tab_stop"
+            android:title="@string/pref_title_tab_stop"
+            android:defaultValue="@string/pref_default_tab_stop" />
+        <SwitchPreference
+            android:key="pref_key_tab_space"
+            android:summaryOff="@string/pref_summary_tab_space_off"
+            android:summaryOn="@string/pref_summary_tab_space_on"
+            android:title="@string/pref_title_tab_space"
+            android:switchTextOff="@string/pref_text_tab_space_off"
+            android:switchTextOn="@string/pref_text_tab_space_on"
+            android:defaultValue="off" />
+    </PreferenceCategory>
+</PreferenceScreen>

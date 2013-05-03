@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.example.Transformer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/main_view" >
+
+	<ScrollView
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:layout_weight="8">
+	 
+		<com.example.Transformer.SelectionView android:id="@+id/text_area"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:scrollHorizontally="true"
+			style="@style/CodeFont"
+			android:textIsSelectable="true" 
+			android:inputType="none" 
+			android:text="@string/hello_world"/>
+		
+	 </ScrollView>
+	
+	<!--<HorizontalScrollView android:id="@+id/suggestions_container" 
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:layout_weight=".5">-->
+	    
+    <LinearLayout android:id="@+id/suggestions_list"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight=".5" />
+	<!--</HorizontalScrollView>-->
+
+    
+    <RelativeLayout android:id="@+id/transform_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" />
+
+</LinearLayout>
